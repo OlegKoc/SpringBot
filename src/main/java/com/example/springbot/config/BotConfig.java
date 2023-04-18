@@ -7,12 +7,12 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @PropertySource("application.properties")
-@Data
+@Data    // создает констуркторы автоматически
 public class BotConfig {
 
     @Value("${bot.name}")
     String botName;
     @Value("${bot.token}")
-    String key;
+    String token;
 
 }
